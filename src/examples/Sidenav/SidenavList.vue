@@ -35,6 +35,20 @@ const getRoute = () => {
 
       <li class="nav-item">
         <sidenav-item
+          to="/countries"
+          :class="getRoute() === 'countries' ? 'active' : ''"
+          :navText="isRTL ? 'الجداول' : 'Countries'"
+        >
+          <template v-slot:icon>
+            <i
+              class="ni ni-calendar-grid-58 text-warning text-sm opacity-10"
+            ></i>
+          </template>
+        </sidenav-item>
+      </li>
+
+      <li class="nav-item">
+        <sidenav-item
           to="/tables"
           :class="getRoute() === 'tables' ? 'active' : ''"
           :navText="isRTL ? 'الجداول' : 'Tables'"

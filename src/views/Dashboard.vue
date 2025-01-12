@@ -1,7 +1,7 @@
 <script setup>
 import MiniStatisticsCard from "@/examples/Cards/MiniStatisticsCard.vue";
 import GradientLineChart from "@/examples/Charts/GradientLineChart.vue";
-import Carousel from "./components/Carousel.vue";
+//import Carousel from "./components/Carousel.vue";
 import CategoriesList from "./components/CategoriesList.vue";
 
 import US from "@/assets/img/icons/flags/US.png";
@@ -103,7 +103,7 @@ const sales = {
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-7 mb-lg">
+          <div class="col-lg-12 mb-lg">
             <!-- line chart -->
             <div class="card z-index-2">
               <gradient-line-chart
@@ -133,12 +133,12 @@ const sales = {
               />
             </div>
           </div>
-          <div class="col-lg-5">
+         <!-- <div class="col-lg-5">
             <carousel />
-          </div>
+          </div>-->
         </div>
         <div class="row mt-4">
-          <div class="col-lg-7 mb-lg-0 mb-4">
+          <div class="col-lg-6 mb-lg-0 mb-4">
             <div class="card">
               <div class="p-3 pb-0 card-header">
                 <div class="d-flex justify-content-between">
@@ -186,7 +186,7 @@ const sales = {
               </div>
             </div>
           </div>
-          <div class="col-lg-5">
+          <div class="col-lg-6">
             <categories-list
               :categories="[
                 {

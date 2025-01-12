@@ -7,6 +7,11 @@ import RTL from "../views/Rtl.vue";
 import Profile from "../views/Profile.vue";
 import Signup from "../views/Signup.vue";
 import Signin from "../views/Signin.vue";
+import Countries from "../views/Countries.vue";
+import CountryLeaguesTable from "../views/CountryLeagues.vue";
+import LeagueSeasonsTable from "../views/LeagueSeasons.vue";
+import SeasonDetails from "../views/SeasonDetails.vue";
+import FixtureDetails from "../views/FixtureDetails.vue";
 
 const routes = [
   {
@@ -23,6 +28,31 @@ const routes = [
     path: "/tables",
     name: "Tables",
     component: Tables,
+  },
+  {
+    path: "/countries",
+    name: "Countries",
+    component: Countries,
+  },
+  {
+    path: "/leagues/:id",
+    name: "CountryLeagues",
+    component: CountryLeaguesTable,
+  },
+  {
+    path: "/seasons/:id",
+    name: "LeagueSeasons",
+    component: LeagueSeasonsTable,
+  },
+  {
+    path: "/seasondetails/:id/:year",
+    name: "SeasonDetails",
+    component: SeasonDetails,
+  },
+  {
+    path: "/fixturedetails/:id",
+    name: "FixtureDetails",
+    component: FixtureDetails,
   },
   {
     path: "/billing",
